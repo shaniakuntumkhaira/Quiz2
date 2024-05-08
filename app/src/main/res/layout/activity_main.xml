@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvRentalPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rental PS Thanos"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/tvRentalPS"/>
+
+    <RadioGroup
+        android:id="@+id/rgType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvType"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbPS5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PS5" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPS4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PS4" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPS3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PS3" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPSVR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PSVR" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvTambahan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambahan"
+        android:textSize="20sp"
+        android:layout_below="@id/rgType"
+        android:layout_marginTop="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/rgTambahan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tvTambahan">
+
+        <RadioButton
+            android:id="@+id/radioButtonIndomie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Indomie" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMieAyam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mie Ayam" />
+
+        <RadioButton
+            android:id="@+id/radioButtonSiomay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Siomay" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvWaktu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Waktu"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/rgTambahan"/>
+
+    <EditText
+        android:id="@+id/etWaktu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Jam"
+        android:layout_below="@id/tvWaktu"/>
+
+    <Button
+        android:id="@+id/btnPesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pesan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/etWaktu"/>
+
+</RelativeLayout>
